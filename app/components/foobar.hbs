@@ -1,18 +1,11 @@
-{{page-title "PageA"}}
-
-<Foobar />
-<Foobar />
-
 <fieldset>
-  <legend>From page-1.page-a</legend>
+  <legend>From foobar</legend>
   <ul>
     <li>{{this.routerUtils.currentEdgeRoute.dummy1}}</li>
     <li>{{this.routerUtils.currentEdgeRoute.dummy2}}</li>
-    <li>isDummyTask2Computed: {{this.isDummy2Computed}}</li>
-    <li>dummy1PlusDummy2: {{this.dummy1PlusDummy2}}</li>
   </ul>
 
   <button type="button" {{on "click" (perform this.routerUtils.currentEdgeRoute.dummyTask2)}}>Refresh</button>
 </fieldset>
 
-{{outlet}}
+{{yield}}
